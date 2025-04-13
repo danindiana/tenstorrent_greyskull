@@ -1,4 +1,4 @@
-# Tenstorrent Diagnostic Tool
+# Tenstorrent e75 and e150 series Diagnostic Tool
 
 The **Tenstorrent Diagnostic Tool** is a Python script designed to analyze and report on the PCIe devices and system configuration of a Linux machine. It provides detailed information about the system, PCIe devices, and potential issues, with a focus on Tenstorrent hardware.
 
