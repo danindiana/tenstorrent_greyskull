@@ -1,0 +1,73 @@
+Running Tenstorrent PCIe Diagnostic Tool...
+
+================================================================================
+                      TENSTORRENT SYSTEM DIAGNOSTIC REPORT                      
+================================================================================
+
+[SYSTEM OVERVIEW]
+Date      : 2025-04-13T18:30:22.549521
+Hostname  : dellserver
+Kernel    : 6.1.0-33-amd64
+Cpu       : Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz
+Memory    : 31GiB
+Os        : Debian GNU/Linux 12 (bookworm)
+
+[PCIe DEVICES]
+
+03:00.0: NVIDIA Other
+Description: VGA compatible controller [0300]: NVIDIA Corporation GP107 [GeForce GTX 1050 Ti] [10de:1c82] (rev a1) (prog-if 00 [VGA controller])
+  (No relevant technical details available)
+
+03:00.1: NVIDIA Other
+Description: Audio device [0403]: NVIDIA Corporation GP107GL High Definition Audio Controller [10de:0fb9] (rev a1)
+  (No relevant technical details available)
+
+04:00.0: Tenstorrent Other
+Description: Processing accelerators [1200]: Device [1e52:faca]
+  (No relevant technical details available)
+
+[TENSTORRENT DEVICES]
+
+Device at 00:1f.2:
+  Vendor/Device: 8086:1d02
+  Class: Other
+
+Device at 03:00.0:
+  Vendor/Device: 10de:1c82
+  Class: Other
+
+Device at 03:00.1:
+  Vendor/Device: 10de:0fb9
+  Class: Other
+
+Device at 04:00.0:
+  Vendor/Device: 1e52:faca
+  Class: Other
+
+Device at 05:00.0:
+  Vendor/Device: 8086:1d6b
+  Class: Other
+
+Device at 07:00.0:
+  Vendor/Device: 1033:0194
+  Class: Other
+
+[SYSTEM CONFIGURATION]
+
+Hugepages:
+  Configured: Yes
+  Size: 2048 kB
+  Count: 99
+  Mounted: Yes
+
+Kernel Modules:
+  tt_kmd: Not loaded
+  NVIDIA: Loaded
+  IOMMU: Disabled
+
+================================================================================
+                              DIAGNOSTIC COMPLETE                               
+================================================================================
+
+Report saved to 'tenstorrent_diagnostic.json'
+Report also saved to 'tenstorrent_diagnostic.yaml'
