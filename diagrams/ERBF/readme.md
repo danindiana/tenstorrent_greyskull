@@ -153,3 +153,81 @@ sequenceDiagram
 
     Note over Rel,Post: Cycle repeats at t+1
 ```
+```mermaid
+%%{init: {'theme': 'dark'}}%%
+graph TD
+    subgraph " "
+        direction LR
+        subgraph " "
+            direction TB
+            subgraph " "
+                Rel["Relational Context<br><span class='subtitle'>The Guiding Past</span>"]:::inputStyle
+            end
+            subgraph " "
+                Stim["External Stimulus<br><span class='subtitle'>The Sensory Present</span>"]:::inputStyle
+            end
+        end
+
+        subgraph " "
+            direction TB
+            subgraph "Cognitive Core"
+                direction LR
+                Attn["Φ<br><span class='subtitle'>Attention</span>"]:::controlStyle
+                Gate["σ<br><span class='subtitle'>Gating</span>"]:::controlStyle
+            end
+
+            subgraph "Cortical Network"
+                subgraph " "
+                    V1["V1"]:::nodeStyle
+                    LM["LM"]:::nodeStyle
+                end
+                subgraph " "
+                    N3["n₃"]:::nodeStyle
+                    N4["n₄"]:::nodeStyle
+                end
+            end
+        end
+
+        subgraph " "
+            direction TB
+            subgraph "Emergent Understanding"
+                Omega["Ω<br><span class='subtitle'>Evidence & Causality</span>"]:::outputStyle
+                Post["B(t+1)<br><span class='subtitle'>Formed Beliefs</span>"]:::outputStyle
+            end
+            subgraph " "
+                Obj["<span class='obj'>Objective: Minimize Divergence</span><br><span class='subtitle'>The Drive to Learn</span>"]:::objStyle
+            end
+        end
+    end
+
+    %% Define connections with pathway styles
+    Rel -- "Guides" --> Attn
+    Stim -- "Drives" --> V1 & LM & N3 & N4
+    Attn -- "Focus" --> Gate
+    Gate -- "Modulates" --> V1 & LM & N3 & N4
+    V1 & LM & N3 & N4 -- "Internal State" --> Omega
+    Omega -- "Inference" --> Post
+    Post -- "Learning Signal" --> Obj
+    Post -. "Becomes Context" .-> Rel
+
+    %% Define CSS-like styles for a unique, inspired look
+    classDef inputStyle fill:#0c4a6e,stroke:#38bdf8,stroke-width:2px,color:#e0f2fe,font-family:Garamond,font-size:14px
+    classDef controlStyle fill:#4a044e,stroke:#c026d3,stroke-width:2px,color:#f5d0fe,font-family:Garamond,font-size:14px
+    classDef nodeStyle fill:#166534,stroke:#4ade80,stroke-width:3px,color:#dcfce7,font-family:Garamond,font-size:16px,font-weight:bold
+    classDef outputStyle fill:#7f1d1d,stroke:#fb7185,stroke-width:2px,color:#ffe4e6,font-family:Garamond,font-size:14px
+    classDef objStyle fill:#000,stroke:#f59e0b,stroke-width:2px,color:#fef3c7,font-family:Garamond,font-size:12px
+    
+    %% Subgraph styling to create invisible containers
+    style 0 fill:transparent,stroke:transparent
+    style 1 fill:transparent,stroke:transparent
+    style 2 fill:transparent,stroke:transparent
+    style 3 fill:transparent,stroke:transparent
+    style 4 fill:transparent,stroke:transparent
+    style 5 fill:transparent,stroke:transparent
+    style 6 fill:transparent,stroke:transparent
+    style 7 fill:transparent,stroke:transparent
+    style 8 fill:transparent,stroke:transparent
+    style 9 fill:transparent,stroke:transparent
+    style 10 fill:transparent,stroke:transparent
+    style 11 fill:transparent,stroke:transparent
+```
