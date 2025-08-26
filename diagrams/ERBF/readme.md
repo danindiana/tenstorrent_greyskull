@@ -208,16 +208,20 @@ graph TD
     V1 & LM & N3 & N4 -- "Internal State" --> Omega
     Omega -- "Inference" --> Post
     Post -- "Learning Signal" --> Obj
-    Post -. "Becomes Context" .-> Rel
+    Post -.->|"Becomes Context"| Rel
 
-    %% Define CSS-like styles for a unique, inspired look
-    classDef inputStyle fill:#0c4a6e,stroke:#38bdf8,stroke-width:2px,color:#e0f2fe,font-family:Garamond,font-size:14px
-    classDef controlStyle fill:#4a044e,stroke:#c026d3,stroke-width:2px,color:#f5d0fe,font-family:Garamond,font-size:14px
-    classDef nodeStyle fill:#166534,stroke:#4ade80,stroke-width:3px,color:#dcfce7,font-family:Garamond,font-size:16px,font-weight:bold
-    classDef outputStyle fill:#7f1d1d,stroke:#fb7185,stroke-width:2px,color:#ffe4e6,font-family:Garamond,font-size:14px
-    classDef objStyle fill:#000,stroke:#f59e0b,stroke-width:2px,color:#fef3c7,font-family:Garamond,font-size:12px
+    %% Define CSS-like styles for enhanced dark mode visibility
+    classDef inputStyle fill:#075985,stroke:#38bdf8,stroke-width:2px,color:#e0f2fe,font-family:Inter,sans-serif
+    classDef controlStyle fill:#581c87,stroke:#a855f7,stroke-width:2px,color:#f3e8ff,font-family:Inter,sans-serif
+    classDef nodeStyle fill:#14532d,stroke:#4ade80,stroke-width:3px,color:#dcfce7,font-family:Inter,sans-serif,font-weight:bold
+    classDef outputStyle fill:#881337,stroke:#f43f5e,stroke-width:2px,color:#fff1f2,font-family:Inter,sans-serif
+    classDef objStyle fill:#111827,stroke:#f59e0b,stroke-width:2px,color:#fef3c7,font-family:Inter,sans-serif
+
+    %% Style the connection lines
+    linkStyle default stroke:#9ca3af,stroke-width:1.5px
+    linkStyle 7 stroke:#f59e0b,stroke-width:2px,stroke-dasharray:5 5
     
-    %% Subgraph styling to create invisible containers
+    %% Subgraph styling to create invisible containers for layout
     style 0 fill:transparent,stroke:transparent
     style 1 fill:transparent,stroke:transparent
     style 2 fill:transparent,stroke:transparent
