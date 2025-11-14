@@ -468,9 +468,93 @@ This repository documents ERBF implementation research on Tenstorrent hardware. 
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+Calisota.ai Public Software License, Version 1.0
 
-Copyright (c) 2025 danindiana
+Copyright (c) 2025 Calisota.ai
+All rights reserved.
+
+1. Permission Grant
+
+Subject to the terms of this License, you are granted a worldwide, royalty-free, non-exclusive, irrevocable license to:
+
+use and run the Software for any purpose;
+
+copy and redistribute the Software, in source or compiled form;
+
+modify, adapt, and create derivative works of the Software; and
+
+combine the Software or derivative works with other software and distribute those combined works.
+
+This License applies to any portion of the Software that is not otherwise marked as being under a different license.
+
+2. Conditions
+
+The above permissions are granted only if all of the following conditions are met:
+
+Preserve Notices
+All copies of the Software, substantial portions of it, or any derivative works must include:
+
+the copyright notice from the top of this License; and
+
+this License text, unmodified, or a clear URL linking to it.
+
+Attribution
+If you publicly use or release a product or service that incorporates the Software or a substantial portion of it, you must provide reasonable attribution to:
+
+“Calisota.ai”
+
+in documentation, about pages, or notices where similar attribution for third-party software is normally placed.
+
+Source Availability for Derivatives (Optional Clause – remove if you want fully permissive)
+If you distribute a modified version of the Software in source or binary form, you must either:
+
+make the source code of your modifications reasonably available under this same License; or
+
+clearly document which parts are modified and how to obtain the corresponding source code.
+
+If you prefer a fully permissive license, you may delete this Clause 3 before using the License.
+
+3. Contributions
+
+Unless you explicitly state otherwise, any contribution you submit to a project using this License is, by default:
+
+licensed under this same License; and
+
+provided with a non-exclusive, worldwide, royalty-free, irrevocable license to the project maintainers to use, modify, and redistribute your contribution as part of the project.
+
+4. Trademarks
+
+This License does not grant any rights to use the “Calisota.ai” name, logos, or other trademarks for endorsement or promotion of derived products or services, except for the limited attribution requirement in Section 2.2. Any additional trademark use requires separate written permission.
+
+5. No Warranty
+
+The Software is provided “as is” and “as available”, without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement. You are solely responsible for determining whether the Software is suitable for your purposes.
+
+6. Limitation of Liability
+
+In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law, shall any copyright holder or contributor be liable for any claim, damages, or other liability arising from, out of, or in connection with the Software or the use of or other dealings in the Software, including but not limited to:
+
+loss of data;
+
+loss of profits;
+
+business interruption; or
+
+any special, incidental, consequential, or indirect damages.
+
+7. Termination
+
+This License automatically terminates with respect to you if:
+
+you materially violate any of its terms and do not cure that violation within 30 days of learning of it; or
+
+you initiate litigation or a patent claim alleging that the Software infringes your intellectual property rights.
+
+Upon termination, you must cease use and distribution of the Software, but any sublicenses you have already granted to third parties will remain in effect, provided those third parties remain in compliance with this License.
+
+8. Governing Law
+
+Unless required otherwise by local law, this License is governed by and construed in accordance with the laws of the jurisdiction in which the original copyright holder of the Software is based, excluding conflict-of-law principles.
 
 ## 🔖 Quick Navigation
 
