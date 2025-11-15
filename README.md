@@ -1,6 +1,6 @@
 # Tenstorrent Grayskull: ERBF Hardware Acceleration
 
-> A comprehensive repository documenting Evidence-based Relational Belief Feedback (ERBF) implementation on Tenstorrent Grayskull AI accelerator hardware.
+> A comprehensive repository documenting Evidence-based Belief Feedback (EBF) implementation on Tenstorrent Grayskull AI accelerator hardware.
 
 ## 🎯 Repository Overview
 
